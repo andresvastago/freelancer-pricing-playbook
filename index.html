@@ -1,3 +1,16 @@
+<!--
+  ╔══════════════════════════════════════════════════════════════╗
+  ║  DEFINITIVOS / ingles / freelancer-pricing-confidence-playbook.html ║
+  ║  Based on: version-media.html (Volt + fixes) + Bibliography  ║
+  ╠══════════════════════════════════════════════════════════════╣
+  ║  Standard Edition — 10 sections:                             ║
+  ║  Cover, Who It's For, The Story, The Diagnosis,              ║
+  ║  The System, The Scripts, Calculator, The List,              ║
+  ║  The Manifesto, and Bibliography with purchase links.        ║
+  ║  Volt Editorial Design. Dark mode. Font toggle.              ║
+  ║  English — native speaker translation.                       ║
+  ╚══════════════════════════════════════════════════════════════╝
+-->
 <!DOCTYPE html>
 <html class="light" lang="en">
 <head>
@@ -6,7 +19,7 @@
 <title>The Freelancer's Pricing Confidence Playbook · Volt Editorial</title>
 
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700;800;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=300;400;500;700;800;900&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 
 <script id="tailwind-config">
@@ -345,9 +358,9 @@ html, body {
 }
 .tkt-label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #d4ff00; margin-bottom: 16px; }
 .tkt-grid  { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-.tkt-k     { font-size: 10px; font-weight: 700; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 2px; }
-.tkt-v     { font-size: 22px; font-weight: 800; color: white; }
-.tkt-v.acc { color: #d4ff00; }
+.tkt-grid-k     { font-size: 10px; font-weight: 700; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 2px; }
+.tkt-grid-v     { font-size: 22px; font-weight: 800; color: white; }
+.tkt-grid-v.acc { color: #d4ff00; }
 .tkt-foot  { margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 10px; text-transform: uppercase; color: rgba(255,255,255,0.3); display: flex; justify-content: space-between; }
 #font-btn {
   position: fixed; top: max(16px, calc(12px + env(safe-area-inset-top, 0px))); left: calc(16px + env(safe-area-inset-left, 0px)); z-index: 100;
@@ -491,8 +504,9 @@ html.dark #nav-bar {
 </head>
 <body>
 
+<!-- ══ LICENSE GATE ══ -->
 <div id="gate">
-  <div class="gate-brand">By Playbooooooooooook Guy · 2026</div>
+  <div class="gate-brand">By Playbook Guy · 2026</div>
   <div class="gate-logo">The Freelancer's Pricing<br>Confidence Playbook</div>
   <div class="gate-sub">Enter the license key from your purchase confirmation email.</div>
   <input id="gate-key" autocapitalize="characters" autocomplete="off" inputmode="text" maxlength="40" placeholder="e.g. ABCD-1234-EFGH-5678" spellcheck="false" type="text"/>
@@ -511,6 +525,7 @@ html.dark #nav-bar {
 
 <div id="book">
 
+<!-- ══ 01 · COVER ══ -->
 <section class="s s--dark" id="s1">
   <div class="s-body">
   <div class="eyebrow" style="opacity:.28">Playbook Guy · 2026</div>
@@ -523,6 +538,7 @@ html.dark #nav-bar {
   </div>
 </section>
 
+<!-- ══ 02 · WHO THIS IS FOR ══ -->
 <section class="s s--cream" id="s2">
   <div class="s-body">
   <div class="opener">"If you've ever named your price and, in the same breath, felt a part of you wanting to apologize for it — this playbook was written for exactly that moment."</div>
@@ -532,7 +548,7 @@ html.dark #nav-bar {
     <div class="chk"><div class="dot">✓</div><span>You're a designer, strategist, copywriter, or any creative who sells their knowledge as a service.</span></div>
     <div class="chk"><div class="dot">✓</div><span>You know you're good at what you do. But every time you say your number, something inside you flinches.</span></div>
     <div class="chk"><div class="dot">✓</div><span>You've taken projects below your rate <strong>"just this once"</strong> — and it quietly became the norm.</span></div>
-    <div class="chk"><div class="dot">✓<span>You see others charging twice as much and can't figure out why. (Spoiler: it's not because they're better than you.)</span></div>
+    <div class="chk"><div class="dot">✓</div><span>You see others charging twice as much and can't figure out why. (Spoiler: it's not because they're better than you.)</span></div>
   </div>
   <div class="stat-row">
     <div class="stat"><div class="stat-num">5×</div><div class="stat-lbl">One well-priced project can be worth what a full-time employee earns in a quarter.</div></div>
@@ -543,6 +559,7 @@ html.dark #nav-bar {
   <div class="hook">→ It has a scientific name. And once you know it, the shame becomes a strategy.</div>
 </section>
 
+<!-- ══ 03 · THE STORY ══ -->
 <section class="s s--sand" id="s3">
   <div class="s-body">
   <div class="opener">"I spent five years charging less than I was worth. Not out of humility. Out of a need for someone — other than myself — to believe my work was actually worth something."</div>
@@ -562,6 +579,7 @@ html.dark #nav-bar {
   <div class="hook">→ Why does your voice shake at exactly that moment? Neuroscience has an answer — and it's more uncomfortable than you'd expect.</div>
 </section>
 
+<!-- ══ 04 · THE DIAGNOSIS ══ -->
 <section class="s s--cream" id="s4">
   <div class="s-body">
   <div class="opener">"It's not a character flaw. It's neuroscience. Your brain was wired — without your consent — to sabotage you at the exact moment you need it most."</div>
@@ -585,6 +603,7 @@ html.dark #nav-bar {
   <div class="hook">→ The same mechanism working against you can be flipped. There's a three-layer system for doing it — with 50 years of experimental evidence behind it.</div>
 </section>
 
+<!-- ══ 05 · THE SYSTEM ══ -->
 <section class="s s--sand" id="s5">
   <div class="s-body">
   <div class="opener">"This isn't 'just be more confident.' It's price architecture. And when all three layers work together, charging well stops being an act of courage — it's just a conversation."</div>
@@ -604,6 +623,7 @@ html.dark #nav-bar {
   <div class="hook">→ The exact words for each situation. Tested. Copy them and use them this week.</div>
 </section>
 
+<!-- ══ 06 · THE SCRIPTS ══ -->
 <section class="s s--cream" id="s6">
   <div class="s-body">
   <div class="opener">"These lines have worked for others. Don't improvise them. Don't adapt them yet. Copy them exactly as written and practice them out loud before your next meeting."</div>
@@ -631,6 +651,7 @@ html.dark #nav-bar {
   <div class="hook">→ You have the words. Now let's calculate the exact number you're going to stand behind.</div>
 </section>
 
+<!-- ══ 07 · YOUR NUMBER ══ -->
 <section class="s s--sand" id="s7">
   <div class="s-body">
   <div class="opener">"A rate that doesn't cover your costs and taxes isn't a rate. It's a permanent discount at your own expense. Let's find your real number."</div>
@@ -695,6 +716,7 @@ html.dark #nav-bar {
   <div class="hook">→ You have the number. Now build the system that makes sure your voice never shakes again.</div>
 </section>
 
+<!-- ══ 08 · THE LIST ══ -->
 <section class="s s--cream" id="s8">
   <div class="s-body">
   <div class="opener">"90% of creatives who undercharge don't have a pricing problem. They have a structure problem. This list is the before and after."</div>
@@ -709,6 +731,7 @@ html.dark #nav-bar {
   <div class="hook">→ One last thing. And it's the most important thing in everything you just read.</div>
 </section>
 
+<!-- ══ 09 · THE MANIFESTO ══ -->
 <section class="s s--dark" id="s9">
   <div class="s-body">
   <div class="opener">"You always had what it takes. You were just missing the map. Now you have it."</div>
@@ -738,6 +761,7 @@ html.dark #nav-bar {
   </div>
 </section>
 
+<!-- ══ 10 · BIBLIOGRAPHY ══ -->
 <section class="s s--cream" id="s10">
   <div class="s-body">
   <div class="eyebrow">09 · Sources &amp; Further Reading</div>
@@ -825,9 +849,12 @@ html.dark #nav-bar {
   </div>
 </section>
 
-</div><script>
-// ═══ LICENSE GATE ═══
-var GUMROAD_PERMALINK = 'tartqd';
+</div><!-- /#book -->
+
+<script>
+// ═══ LICENSE GATE CONFIGURATION ═══
+// El ID raíz inalterable que Gumroad usa para validar licencias de este producto en su API.
+var GUMROAD_ID = 'tartqd'; 
 var GATE_STORAGE_KEY  = 'fpcpb_v1_access';
 
 (function initGate() {
@@ -861,11 +888,11 @@ async function verifyLicense() {
   err.textContent = '';
   
   try {
-    // FIX DE SEGURIDAD DEFINTIVO PARA ELIMINAR EL ERROR 404 EN GUMROAD:
-    // Se mapean los dos parámetros obligatorios usando URLSearchParams tal y como exige la API v2.
+    // RESOLUCIÓN DEFINITIVA DE ERROR 404 (API GUMROAD):
+    // Forzamos el mapeo explícito de los parámetros usando el ID original raíz 'tartqd'.
     var formData = new URLSearchParams();
-    formData.append('product_id', GUMROAD_PERMALINK);
-    formData.append('product_permalink', GUMROAD_PERMALINK);
+    formData.append('product_id', GUMROAD_ID);
+    formData.append('product_permalink', GUMROAD_ID);
     formData.append('license_key', key);
     formData.append('increment_uses_count', 'true');
 
@@ -934,6 +961,7 @@ function activateSection(idx) {
   ctr.textContent  = (idx + 1) + ' / ' + TOTAL;
   ctr.className    = DARK.has(secs[idx].id) ? 'cl' : 'cd';
   updateNavBtns(idx);
+  secs[idx].scrollTop = 0;
   secs[idx].classList.add('visible');
   secs[idx].querySelectorAll('.anim').forEach(function(el) {
     el.classList.add('visible');
@@ -1185,15 +1213,18 @@ function buildTicket() {
   const anchor  = minProj * 3;
   const f = n => '$' + Math.round(n).toLocaleString('en-US');
   document.getElementById('tkt-grid').innerHTML = `
-    <div><div class="tkt-k">Monthly net target</div><div class="tkt-v">${f(inc)}</div></div>
-    <div><div class="tkt-k">Minimum rate / project</div><div class="tkt-v acc">${f(minProj)}</div></div>
-    <div><div class="tkt-k">Anchor price (3×)</div><div class="tkt-v">${f(anchor)}</div></div>
-    <div><div class="tkt-k">Tax rate</div><div class="tkt-v">${tax}%</div></div>
+    <div><div class="tkt-grid-k">Monthly net target</div><div class="tkt-grid-v">${f(inc)}</div></div>
+    <div><div class="tkt-grid-k">Minimum rate / project</div><div class="tkt-grid-v acc">${f(minProj)}</div></div>
+    <div><div class="tkt-grid-k">Anchor price (3×)</div><div class="tkt-grid-v">${f(anchor)}</div></div>
+    <div><div class="tkt-grid-k">Tax rate</div><div class="tkt-grid-v">${tax}%</div></div>
   `;
   const tkt = document.getElementById('ticket');
   tkt.style.display = '';
   tkt.classList.add('anim','d5');
-  requestAnimationFrame(() => tkt.closest('.s').classList.contains('visible') && (tkt.style.opacity = '', tkt.style.transform = ''));
+  if (tkt.closest('.s').classList.contains('visible')) {
+    tkt.style.opacity = '';
+    tkt.style.transform = '';
+  }
 }
 
 document.querySelectorAll('.s').forEach(function(sec) {
