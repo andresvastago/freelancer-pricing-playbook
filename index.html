@@ -873,8 +873,40 @@ var GATE_STORAGE_KEY  = 'fpcpb_v1_access';
   });
 })();
 
-function verifyLicense() {
-  unlockContent(true);
+async function verifyLicense() {
+  var key = document.getElementById('gate-key').value.trim();
+  if (!key) {
+    document.getElementById('gate-err').textContent = 'Please enter your license key.';
+    return;
+  }
+  var btn = document.getElementById('gate-btn');
+  var err = document.getElementById('gate-err');
+  btn.textContent = 'Verifying...';
+  btn.style.opacity = '0.6';
+  btn.style.pointerEvents = 'none';
+  err.textContent = '';
+  try {
+    var r = await fetch('https://api.gumroad.com/v2/licenses/verify', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: 'product_id=pricing-confidence-playbook&license_key=' + encodeURIComponent(key) + '&increment_uses_count=true'
+    });
+    var d = await r.json();
+    if (d.success === true) {
+      try { localStorage.setItem(GATE_STORAGE_KEY, JSON.stringify({ok: true})); } catch(e) {}
+      unlockContent(true);
+    } else {
+      err.textContent = 'Invalid key. Check your email and try again.';
+      btn.textContent = 'Access →';
+      btn.style.opacity = '1';
+      btn.style.pointerEvents = 'auto';
+    }
+  } catch(e) {
+    err.textContent = 'Connection error. Check your internet and try again.';
+    btn.textContent = 'Access →';
+    btn.style.opacity = '1';
+    btn.style.pointerEvents = 'auto';
+  }
 }
 
 function unlockContent(animate) {
