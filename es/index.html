@@ -976,7 +976,7 @@ async function verifyLicense() {
     var r = await fetch('https://api.gumroad.com/v2/licenses/verify', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: 'product_id=tartqd&product_permalink=pricing-confidence-playbook&license_key=' + encodeURIComponent(key) + '&increment_uses_count=false'
+      body: 'product_id=tartqd&product_permalink=pricing-confidence-playbook&license_key=' + encodeURIComponent(key) + '&increment_uses_count=true'
     });
     var d = await r.json();
     if (d.success === true) {
